@@ -3,9 +3,11 @@ The deformation method is based on Nadaraya-Watson regression.
 
 The left image below corresponds to the coronal cross-section of a 3D region of interest containing a lung tumor. The motion vectors representing the projection of a 3D motion field corresponding to breathing onto that cross-section are superimposed on the left image. That 3D motion field is defined at each voxel of the initial image. The output of the code is the warped 3D image, whose sagittal cross-section is displayed on the right.
 
+<p float="left">
 <img src="DVF Ycs=71.jpg" width="40%" height="40%"/>
 <img src="Warped image y slice y = 71 gaussian kernel filter_size 3 sg_warp 0.500000.jpg" width="40%" height="40%"/>
-
+</p>
+ 
 We used this code (including the hyper-parameter optimization, cf below) in the following research article: Michel Pohl, Mitsuru Uesaka, Kazuyuki Demachi, Ritu Bhusal Chhatkuli,
 Prediction of the motion of chest internal points using a recurrent neural network trained with real-time recurrent learning for latency compensation in lung cancer radiotherapy,
 Computerized Medical Imaging and Graphics,
