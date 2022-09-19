@@ -1,5 +1,5 @@
 function [ disp_par ] = load_3Ddisplay_parameters(beh_par, im_par)
-% Loading parameters concerning the display of the warped images and the deformaiton vector field
+% Loading parameters concerning the display of the warped images and deformation vector field
 %
 % Author : Pohl Michel
 % Date : August 31st, 2020
@@ -9,7 +9,7 @@ function [ disp_par ] = load_3Ddisplay_parameters(beh_par, im_par)
     disp_par_file = '3Ddisp_par.xlsx';
     opts = detectImportOptions(disp_par_file);
     opts = setvartype(opts,'double');
-    opts.DataRange = '2:2'; % pour pouvoir écrire commentaires sur les variables en dessous ds fichier excel
+    opts.DataRange = '2:2'; % pour pouvoir Ã©crire commentaires sur les variables en dessous ds fichier excel
     disp_par = table2struct(readtable(disp_par_file, opts));
 
     disp_par.OF_res = sprintf('-r%d', int16(disp_par.OF_res));
