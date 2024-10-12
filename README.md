@@ -40,3 +40,7 @@ in Virginia Commonwealth University Massey Cancer Center,
 which comes from the 4D-Lung dataset of the Cancer Imaging Archive open database: https://wiki.cancerimagingarchive.net/display/Public/4D-Lung
 
 The DVF is noisy along the edges of the initial image, as those areas respresent a challenge for optical flow methods.
+
+-----------------------------------------------
+
+Update (10th October 2024): An adaptation of the code in this repository for 2D image warping (instead of 3D) is available here: https://github.com/pohl-michel/2D-MR-image-prediction. That new repository focuses mainly on video forecasting but warping is implemented to transform the first image of the input sequence using the predicted deformation field into the predicted image in the future.
